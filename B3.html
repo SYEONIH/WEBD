@@ -4,19 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃 B-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 100%;
+        }
+
+        .container{
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+        }
+
+        #header{
+            width: 100%;
+            background-color: #d1aeae;
+            height: 100px;
+        }
+
+
+        #header .logo{
+            width: 20%;
+            height: 100px;
+            background-color: #cd5959;
+
+        }
+        #header .nav{
+            width: 80%;
+            height: 100px;
+            background-color: #b3db33;
+        }
+
+        #slider{
+            height: 300px;
+            width: 100%;
+        }
+
+        #main{
+            width: 100%;
+        }
+
+        #main .content1{
+            height: 200px;
+            width: 33.333%;
+            background-color: #645050;
+        }
+
+        #main .content2{
+            height: 200px;
+            width: 33.333%;
+            background-color: #8a8383;
+
+        }
+
+        #main .content3{    
+            height: 200px;
+            width: 33.333%;
+            background-color: #e10e0e;
+
+        }
+
+
+        #footer{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(147, 223, 39);
+        }
+
+        #footer .footer1{
+            height: 100px;
+            width: 33.33%;
+            background-color: rgb(232, 239, 221);
+        }
+
+
+        #footer .footer2{
+            height: 100px;
+            width: 33.333%;
+            background-color: rgb(172, 194, 141);
+        }
+
+        #footer .footer3{
+            height: 100px;
+            width: 33.33%;
+            background-color: rgb(75, 198, 226);
+        }
+
+        
+
+    </style>
 </head>
 <body>
     <div id="wrap">
         <header id="header">  
+            <div class="container">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>
         </header>
 
         <article id="slider">  
+            <div class="container">
+            </div>
         </article>
 
-        <main id="main">  
+        <main id="main">
+            <div class="container">
+                <section class="content1"></section>
+                <section class="content2"></section>
+                <section class="content3"></section>
+            </div>
         </main>
 
         <footer id="footer">  
+            <div class="container">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </div>
         </footer>
     </div>
     
